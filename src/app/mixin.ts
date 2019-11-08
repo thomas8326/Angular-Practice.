@@ -1,3 +1,7 @@
+/*
+* This file is Mixin practice.
+*/
+
 export class A {
   isA: boolean;
 
