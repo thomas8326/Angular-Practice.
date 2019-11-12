@@ -1,0 +1,28 @@
+.main {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.group-name {
+  font-weight: bold;
+}
+
+.content-group {
+  margin-left: 12px;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+p {
+  margin: 0;
+}

@@ -1,1 +1,10 @@
 /* Add application styles & imports to this file! */
+
+
+html, body{
+  font-size: 14px;
+}
+
+.small-body {
+  font-size: 12px;
+}
