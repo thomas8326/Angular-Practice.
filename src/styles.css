@@ -8,3 +8,15 @@ html, body{
 .small-body {
   font-size: 12px;
 }
+
+.line-clamp-ellipsis {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    /* autoprefixer: off */
+    -webkit-box-orient: vertical;
+    /* autoprefixer: on */
+    -webkit-box-flex: 1;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

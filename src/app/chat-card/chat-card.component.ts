@@ -23,7 +23,7 @@ export class ChatCardComponent implements OnInit {
     this.data = {
       id: '21231d23f1a32sf1sa3d',
       groupName: 'QA Team',
-      lastMessage: 'Hello',
+      lastMessage: 'HelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHello',
     }
   }
 

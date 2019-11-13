@@ -1,6 +1,17 @@
-.main {
+.flex, .main {
   display: flex;
   align-items: center;
+  width: 100%;
+}
+
+.title {
+  overflow: hidden;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto 44px;
+  width: 100%;
 }
 
 .avatar {
@@ -9,20 +20,38 @@
   border-radius: 50%;
 }
 
-.group-name {
+.group {
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-weight: bold;
 }
 
 .content-group {
+  width: 100%;
   margin-left: 12px;
 }
 
-img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+.message-img {
+  width: 30px;
+  height: 30px;
 }
 
-p {
+.content {
+  word-break: break-all;
   margin: 0;
+  width: 100%;
+}
+
+.lock {
+  flex: 0 0 18px;
+  height: 18px;
+  background-color: red;
+}
+
+.container {
+  width: 350px;
+}
+
+.line-clamp-ellipsis {
+    -webkit-line-clamp: 2;
 }
