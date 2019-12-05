@@ -11,16 +11,24 @@ export class InfiniteScrollTestingComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.renderList();
+    this.renderList(10);
   }
 
-  renderList() {
-    for(let i = 0; i < 100; i++) {
-      this.list.push(`item${i}`);
+  renderList(length: number, isUnshift = false) {
+    for(let i = 0; i < length; i++) {
+      if (isUnshift) {
+        this.list.unshift(`item${i}`);
+      } else {
+        this.list.push(`item${i}`);
+      }
     }
   }
 
   getLoadDataCommand() {
     console.log('test');
+  }
+
+  unshift() {
+    this.renderList(5, true);
   }
 }

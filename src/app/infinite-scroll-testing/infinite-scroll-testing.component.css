@@ -3,6 +3,8 @@ ul {
   width: 150px;
   overflow: auto;
   position: relative;
+
+  border: 1px solid black;
 }
 
 .sensor {
