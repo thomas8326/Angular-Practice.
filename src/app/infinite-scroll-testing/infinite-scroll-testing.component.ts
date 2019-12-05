@@ -6,15 +6,12 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
   styleUrls: ['./infinite-scroll-testing.component.css']
 })
 export class InfiniteScrollTestingComponent implements OnInit {
-
-  @ViewChild('sensor', {static: true}) sensor: ElementRef;
   list: string[] = [];
 
   constructor() { }
 
   ngOnInit() {
     this.renderList();
-    this.intersectionObserable();
   }
 
   renderList() {
@@ -23,12 +20,7 @@ export class InfiniteScrollTestingComponent implements OnInit {
     }
   }
 
-  intersectionObserable() {
-    new IntersectionObserver(([entry])=> console.log(entry), {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.5
-    }).observe(this.sensor.nativeElement);
+  getLoadDataCommand() {
+    console.log('test');
   }
-
 }
