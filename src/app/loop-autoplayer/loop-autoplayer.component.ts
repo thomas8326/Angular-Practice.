@@ -18,13 +18,18 @@ export class LoopAutoplayerComponent implements AfterViewInit {
   }
 
   goLeft() {
-    this.renender.setStyle(this.div1.nativeElement, 'display', 'none');
-    this.renender.setStyle(this.div2.nativeElement, 'display', 'flex');
+    this.renender.addClass(this.div1.nativeElement, 'moveLeft');
+    this.renender.addClass(this.div2.nativeElement, 'moveRight');
+    this.renender.removeClass(this.div1.nativeElement, 'moveRight');
+    this.renender.removeClass(this.div2.nativeElement, 'moveLeft');
   }
 
   goRight() {
-    this.renender.setStyle(this.div1.nativeElement, 'display', 'flex');
-    this.renender.setStyle(this.div2.nativeElement, 'display', 'none');
+    this.renender.addClass(this.div1.nativeElement, 'moveRight');
+    this.renender.addClass(this.div2.nativeElement, 'moveLeft');
+
+    this.renender.removeClass(this.div1.nativeElement, 'moveLeft');
+    this.renender.removeClass(this.div2.nativeElement, 'moveRight');
   }
 
 }
