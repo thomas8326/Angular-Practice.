@@ -23,7 +23,7 @@
 .moveLeft {
   transition-property: left;
   transition-duration: 1s;
-  transition-delay: 1s;
+
   left: 50px;
   z-index: 1
 }
@@ -31,7 +31,7 @@
 .moveRight {
   transition-property: left;
   transition-duration: 1s;
-  transition-delay: 1s;
+  transition-delay: 2s;
   left: 100px;
   z-index: 50;
 }
