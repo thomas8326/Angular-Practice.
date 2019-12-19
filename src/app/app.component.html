@@ -2,4 +2,9 @@
 
 <!-- <app-infinite-scroll-testing></app-infinite-scroll-testing> -->
 
-<app-loop-autoplayer></app-loop-autoplayer>
+<app-loop-autoplayer>
+  <div *ngFor="let i of [1,2,3,4,5]" class="box">
+    {{ i }}
+  </div>
+
+</app-loop-autoplayer>
