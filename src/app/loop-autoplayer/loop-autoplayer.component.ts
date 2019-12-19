@@ -19,9 +19,9 @@ export class LoopAutoplayerComponent implements AfterViewInit, OnDestroy {
   @Input() isokineticMotionTime = 15; // μs
   @Input() movingDistance = 1;
 
-  @ViewChild('autoPlayer') autoPlayer: ElementRef<any>;
-  @ViewChild('container') container: ElementRef<any>;
-  @ViewChild('content') content: ElementRef<any>;
+  @ViewChild('autoPlayer', {static: true}) autoPlayer: ElementRef<any>;
+  @ViewChild('container', {static: true}) container: ElementRef<any>;
+  @ViewChild('content', {static: true}) content: ElementRef<any>;
 
   direction = -1;
   autoPlayerLeftPos: number;
