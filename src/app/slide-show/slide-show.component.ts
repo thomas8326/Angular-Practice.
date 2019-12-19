@@ -10,19 +10,19 @@ const HUNDRED_PERCENT = 100;
   styleUrls: ['./slide-show.component.css'],
   animations: [
     trigger('imageSlide', [
-      transition(':enter', [
+      transition('void => *', [
         style({
           display: 'none',
           transform: 'translateX(100%)'
         }),
         animate('1s ease', style({
-          display: 'grid',
+          display: 'block',
           transform: 'translateX(0%)'
         })),
       ]),
-      transition(':leave', [
+      transition('* => void', [
         style({
-          display: 'grid',
+          display: 'block',
           transform: 'translateX(0%)'
         }),
         animate('1s ease', style({

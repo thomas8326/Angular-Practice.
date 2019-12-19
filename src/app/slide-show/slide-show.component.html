@@ -1,6 +1,6 @@
 <ul class="slide-container" #slideGallery>
   <ng-container *ngFor="let rooms of gallery; let i = index" >
-    <li *ngIf="slideIndex === i"  @imageSlide class="exhibition-room" #slideExhibitionRoom>
+    <li *ngIf="slideIndex === i" @imageSlide class="exhibition-room" #slideExhibitionRoom>
         <div *ngFor="let item of rooms" class="picture">
           <ng-container 
             [ngTemplateOutlet]="template"
