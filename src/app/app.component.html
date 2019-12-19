@@ -8,3 +8,10 @@
   </div>
 
 </app-loop-autoplayer>
+
+<app-slideshow
+  [template]="template"
+  [gallery]="[1, 2 ,3 ,4 ,5]"
+></app-slideshow>
+
+<ng-template let-item="item" #template>{{item}}</ng-template>

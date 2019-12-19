@@ -1,4 +1,4 @@
-import { Component, Input, ElementRef, AfterViewInit, ViewChildren, QueryList, Renderer2, ViewChild, HostListener } from '@angular/core';
+import { TemplateRef, Component, Input, ElementRef, AfterViewInit, ViewChildren, QueryList, Renderer2, ViewChild, HostListener } from '@angular/core';
 import { timer } from 'rxjs';
 import { trigger, style, transition, animate } from '@angular/animations';
 
@@ -40,6 +40,7 @@ export class SlideshowComponent implements AfterViewInit {
   @Input() columnCount = 1;
   @Input() rowCount = 1;
   @Input() height = 200;
+  @Input() template: TemplateRef<any>;
 
   @Input('gallery') set showGallery(list: any[]) {
     this.gallery = this.listToMatrix(list, this.subArrayLength);
