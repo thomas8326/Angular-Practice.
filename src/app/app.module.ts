@@ -10,10 +10,11 @@ import { InfiniteScrollTestingComponent } from './infinite-scroll-testing/infini
 import { IntersectionIndicatorComponent } from './infinite-scroll-testing/intersection-indicator/intersection-indicator.component';
 import { LoopAutoplayerComponent } from './loop-autoplayer/loop-autoplayer.component';
 import { SlideshowComponent } from './slide-show/slide-show.component';
+import { PracticeI18nComponent } from './practice-i18n/practice-i18n.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, BrowserAnimationsModule ],
-  declarations: [ AppComponent, HelloComponent, ChatCardComponent, InfiniteScrollTestingComponent, IntersectionIndicatorComponent, LoopAutoplayerComponent, SlideshowComponent ],
+  declarations: [ AppComponent, HelloComponent, ChatCardComponent, InfiniteScrollTestingComponent, IntersectionIndicatorComponent, LoopAutoplayerComponent, SlideshowComponent, PracticeI18nComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
