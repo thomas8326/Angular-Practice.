@@ -12,10 +12,11 @@ import { LoopAutoplayerComponent } from './loop-autoplayer/loop-autoplayer.compo
 import { SlideshowComponent } from './slide-show/slide-show.component';
 import { PracticeI18nComponent } from './practice-i18n/practice-i18n.component';
 import { ResumeComponent } from './resume/resume.component';
+import { TwoColumnComponent } from './layout/two-column/two-column.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, BrowserAnimationsModule ],
-  declarations: [ AppComponent, HelloComponent, ChatCardComponent, InfiniteScrollTestingComponent, IntersectionIndicatorComponent, LoopAutoplayerComponent, SlideshowComponent, PracticeI18nComponent, ResumeComponent ],
+  declarations: [ AppComponent, HelloComponent, ChatCardComponent, InfiniteScrollTestingComponent, IntersectionIndicatorComponent, LoopAutoplayerComponent, SlideshowComponent, PracticeI18nComponent, ResumeComponent, TwoColumnComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
