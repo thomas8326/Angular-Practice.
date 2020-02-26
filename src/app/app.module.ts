@@ -15,7 +15,7 @@ import { TwoColumnComponent } from './layout/two-column/two-column.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, BrowserAnimationsModule ],
-  declarations: [ AppComponent, HelloComponent, ChatCardComponent, InfiniteScrollTestingComponent, IntersectionIndicatorComponent, LoopAutoplayerComponent, SlideshowComponen, ResumeComponent, TwoColumnComponent ],
+  declarations: [ AppComponent, HelloComponent, ChatCardComponent, InfiniteScrollTestingComponent, IntersectionIndicatorComponent, LoopAutoplayerComponent, SlideshowComponent, ResumeComponent, TwoColumnComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
