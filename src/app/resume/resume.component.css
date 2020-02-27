@@ -18,3 +18,12 @@ img {
 .basicInfo > .message {
     text-align: center;
 }
+
+.skill {
+  display: flex;
+  width: 100%;
+}
+
+.skill > span {
+  flex: 2fr;
+}
