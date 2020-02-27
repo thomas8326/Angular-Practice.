@@ -1,18 +1,14 @@
-.avatar {
-  width: 150px;
-  height: 150px;
-}
-
-img {
-  width: 100%;
+.leftColumn, .rightColumn {
   height: 100%;
-  border-radius: 50%;
 }
 
 .basicInfo {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  background: #666;
+  color: white;
 }
 
 .basicInfo > .message {
@@ -30,8 +26,4 @@ small {
 .skill {
   display: flex;
   width: 100%;
-}
-
-.skill > span {
-  flex: 2fr;
 }
