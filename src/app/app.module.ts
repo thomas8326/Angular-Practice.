@@ -14,10 +14,11 @@ import { ResumeComponent } from './resume/resume.component';
 import { TwoColumnComponent } from './layout/two-column/two-column.component';
 import { StarComponent } from './resume/star/star.component';
 import { BasicInfoComponent } from './resume/star/basic-info/basic-info.component';
+import { WorkExperiencesComponent } from './resume/star/work-experiences/work-experiences.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, BrowserAnimationsModule ],
-  declarations: [ AppComponent, HelloComponent, ChatCardComponent, InfiniteScrollTestingComponent, IntersectionIndicatorComponent, LoopAutoplayerComponent, SlideshowComponent, ResumeComponent, TwoColumnComponent, StarComponent, BasicInfoComponent ],
+  declarations: [ AppComponent, HelloComponent, ChatCardComponent, InfiniteScrollTestingComponent, IntersectionIndicatorComponent, LoopAutoplayerComponent, SlideshowComponent, ResumeComponent, TwoColumnComponent, StarComponent, BasicInfoComponent, WorkExperiencesComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
