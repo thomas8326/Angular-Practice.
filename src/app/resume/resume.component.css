@@ -2,7 +2,7 @@
   height: 100%;
 }
 
-.basicInfo {
+.leftColumn {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,8 +11,20 @@
   color: white;
 }
 
+.rightColumn {
+  background-color: #FFFAF0;
+}
+
 .basicInfo > .message {
     text-align: center;
+}
+
+.workExperience {
+  padding: 60px 40px 10px;
+}
+
+h2 {
+  margin-top: 0;
 }
 
 h4 {
