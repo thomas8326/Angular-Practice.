@@ -10,6 +10,8 @@ export class StarComponent implements OnInit {
   @Input() stars: number;
 
   @Input() starsCount = 5;
+
+  @Input() title: string;
   starsCountAry: number[] = [];
 
   constructor() { }

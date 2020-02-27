@@ -43,17 +43,16 @@
     <section class="function-area workExperience">
       <h4>Skills</h4>
       <div class="skill">
-        <span>Angular</span>
-        <app-star [stars]="4"></app-star>
+        <app-star [stars]="4" [title]="'Angular'"></app-star>
       </div>
-      <div>
-        TypeScript ****
+      <div class="skill">
+        <app-star [stars]="4" [title]="'TypeScript'"></app-star>
       </div>
-      <div>
-        JavaScript **
+      <div class="skill">
+        <app-star [stars]="2" [title]="'Javascript'"></app-star>
       </div>
-      <div>
-        React *
+      <div class="skill">
+        <app-star [stars]="1" [title]="'React'"></app-star>
       </div>
     </section>
   </div>

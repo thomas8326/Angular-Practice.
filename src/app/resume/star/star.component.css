@@ -3,13 +3,23 @@
   width: 100%;
 }
 
+.main {
+  display: flex;
+}
+
+
+h5 {
+  width: 100
+}
+
 ul {
   display: flex;
   margin: 0;
   padding: 0;
 
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .shine {
