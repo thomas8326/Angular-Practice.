@@ -19,6 +19,14 @@ img {
     text-align: center;
 }
 
+h4 {
+  margin-bottom: 0px;
+}
+
+small {
+  color: #ADADAD
+}
+
 .skill {
   display: flex;
   width: 100%;
