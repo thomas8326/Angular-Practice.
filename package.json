@@ -13,6 +13,7 @@
     "@angular/router": "8.0.0",
     "@w11k/ngx-componentdestroyed": "^4.1.4",
     "core-js": "2.6.9",
+    "jspdf": "1.5.1",
     "mixins": "0.0.1",
     "rxjs": "6.5.2",
     "web-animations-js": "2.3.2",
