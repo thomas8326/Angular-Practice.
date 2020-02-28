@@ -16,10 +16,11 @@ import { StarComponent } from './resume/star/star.component';
 import { BasicInfoComponent } from './resume/basic-info/basic-info.component';
 import { WorkExperiencesComponent } from './resume/work-experiences/work-experiences.component';
 import { AdditionalInfoComponent } from './resume/additional-info/additional-info.component';
+import { RatingComponent } from './resume/rating/rating.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, BrowserAnimationsModule ],
-  declarations: [ AppComponent, HelloComponent, ChatCardComponent, InfiniteScrollTestingComponent, IntersectionIndicatorComponent, LoopAutoplayerComponent, SlideshowComponent, ResumeComponent, TwoColumnComponent, StarComponent, BasicInfoComponent, WorkExperiencesComponent, AdditionalInfoComponent ],
+  declarations: [ AppComponent, HelloComponent, ChatCardComponent, InfiniteScrollTestingComponent, IntersectionIndicatorComponent, LoopAutoplayerComponent, SlideshowComponent, ResumeComponent, TwoColumnComponent, StarComponent, BasicInfoComponent, WorkExperiencesComponent, AdditionalInfoComponent, RatingComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

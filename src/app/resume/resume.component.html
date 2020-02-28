@@ -1,28 +1,25 @@
-<app-two-column>
-	<div class="basicInfo leftColumn">
-    <app-basic-info></app-basic-info>
-    <app-additional-info></app-additional-info>
+<app-two-column [columnWidth]="'1fr 2fr'">
+	<div class="info leftColumn">
+		<app-basic-info></app-basic-info>
+		<app-additional-info></app-additional-info>
 	</div>
-  <div class="rightColumn">
-    <section class="function-area workExperience">
-      <h2>Work Experience</h2>
-      <app-work-experiences></app-work-experiences>
-    </section>
-    <section class="function-area workExperience">
-      <h2>Skills</h2>
-      <div class="skill">
-        <app-star [stars]="4" [title]="'Angular'"></app-star>
-      </div>
-      <div class="skill">
-        <app-star [stars]="4" [title]="'TypeScript'"></app-star>
-      </div>
-      <div class="skill">
-        <app-star [stars]="2" [title]="'Javascript'"></app-star>
-      </div>
-      <div class="skill">
-        <app-star [stars]="1" [title]="'React'"></app-star>
-      </div>
-    </section>
-  </div>
+	<div class="others rightColumn">
+		<section class="function-area workExperience">
+			<h2>Work Experience</h2>
+			<app-work-experiences></app-work-experiences>
+		</section>
+		<section class="function-area abilities">
+			<app-two-column>
+				<div class="leftColumn">
+					<h2>Skills</h2>
+					<app-rating [data]="skills"></app-rating>
+				</div>
+				<div class="rightColumn">
+					<h2>English</h2>
+					<app-rating [data]="languages"></app-rating>
+				</div>
+			</app-two-column>
+		</section>
+	</div>
 
 </app-two-column>

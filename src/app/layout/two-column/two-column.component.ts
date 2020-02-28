@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-two-column',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./two-column.component.css']
 })
 export class TwoColumnComponent implements OnInit {
+
+  @Input() columnWidth = '1fr 1fr';
 
   constructor() { }
 

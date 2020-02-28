@@ -1,0 +1,5 @@
+<div class="main">
+	<div class="skill" *ngFor="let item of data">
+		<app-star [stars]="item.rating" [title]="item.name"></app-star>
+	</div>
+</div>

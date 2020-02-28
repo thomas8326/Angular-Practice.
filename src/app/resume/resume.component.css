@@ -2,7 +2,7 @@
   height: 100%;
 }
 
-.leftColumn {
+.info {
   display: flex;
   flex-direction: column;
 
@@ -10,11 +10,11 @@
   color: white;
 }
 
-.rightColumn {
+.others {
   background-color: #FFFAF0;
 }
 
-.basicInfo > .message {
+.info > .message {
     text-align: center;
 }
 
@@ -37,4 +37,8 @@ small {
 .skill {
   display: flex;
   width: 100%;
+}
+
+.abilities {
+
 }
