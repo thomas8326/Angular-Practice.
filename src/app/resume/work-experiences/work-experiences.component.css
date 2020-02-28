@@ -22,3 +22,14 @@ hr {
   border: 20px solid black;
   border-color: black transparent transparent transparent;
 }
+
+h4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+small {
+  color: #ADADAD;
+}
