@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 import { DocumnetEventService } from './services/documentEvent.service';
 
 
@@ -11,11 +12,15 @@ export class AppComponent implements OnInit {
   name = 'Angular';
   projectStatus = 'Inbox';
 
-  constructor(private documentEvent: DocumnetEventService) {
+  formGroup: FormGroup;
 
+  constructor() {
+  
   }
 
   ngOnInit() {
-    this.documentEvent.getDocumentEvent$().subscribe(console.log)
+    console.log('test');
+    this.formGroup = new FormGroup({username: new FormControl('')});
+    this.formGroup.valueChanges.subscribe(value => console.log(value));
   }
 }

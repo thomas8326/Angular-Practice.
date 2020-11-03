@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
@@ -17,10 +17,11 @@ import { BasicInfoComponent } from './resume/basic-info/basic-info.component';
 import { WorkExperiencesComponent } from './resume/work-experiences/work-experiences.component';
 import { AdditionalInfoComponent } from './resume/additional-info/additional-info.component';
 import { RatingComponent } from './resume/rating/rating.component';
+import { FormInputComponent } from './form-input/form-input.component';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, BrowserAnimationsModule ],
-  declarations: [ AppComponent, HelloComponent, ChatCardComponent, InfiniteScrollTestingComponent, IntersectionIndicatorComponent, LoopAutoplayerComponent, SlideshowComponent, ResumeComponent, TwoColumnComponent, StarComponent, BasicInfoComponent, WorkExperiencesComponent, AdditionalInfoComponent, RatingComponent ],
+  imports:      [ BrowserModule, FormsModule, BrowserAnimationsModule, ReactiveFormsModule ],
+  declarations: [ AppComponent, HelloComponent, ChatCardComponent, InfiniteScrollTestingComponent, IntersectionIndicatorComponent, LoopAutoplayerComponent, SlideshowComponent, ResumeComponent, TwoColumnComponent, StarComponent, BasicInfoComponent, WorkExperiencesComponent, AdditionalInfoComponent, RatingComponent, FormInputComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

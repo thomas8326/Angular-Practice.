@@ -19,3 +19,7 @@
 <!-- <button (click)="download()">Click</button>
 <app-resume></app-resume> -->
 
+<form [formGroup]="formGroup">
+  <app-form-input formControlName="username"></app-form-input>
+</form>
+<button (click)="onTest()">Click</button>

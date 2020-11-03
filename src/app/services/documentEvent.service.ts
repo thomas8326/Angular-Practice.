@@ -16,7 +16,7 @@ export class DocumnetEventService {
   }
 
   constructor() {
-    this.listenDocumentClick();
+    // this.listenDocumentClick();
   }
 
   listenDocumentClick() {
